@@ -13,5 +13,8 @@ def predict():
     pred = model.predict(final_features)
     return render_template('index.html', prediction_text='The flower is of: {}'.format(pred))
 
-if __name__ == "__main__":  
-    app.run(debug=True)
+#if __name__ == "__main__":  
+#    app.run(debug=True)
+    
+if __name__== "__main__":
+    app.run(host='0.0.0.0', port=8080)
